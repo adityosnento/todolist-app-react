@@ -1,0 +1,89 @@
+.list-style {
+   background-color: #e5e5e5;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 8px;
+   list-style: none;
+   display: flex;
+   width: 90%;
+   justify-content: space-between;
+   font-size: 12px;
+}
+
+.list-margin {
+    color: white;
+
+    .input-checked {
+        margin-right: 15px;
+        align-items: center;
+        padding-bottom: 15px;
+        text-decoration-line: line-through;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        border-color:transparent;
+    }
+
+    .input-in  {
+        margin-right: 15px;
+        align-items: center;
+        padding-bottom: 15px;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        border-color:transparent;
+        margin-left: 10px;
+    }
+
+    input {
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+    .input-in:hover {
+        background-color: transparent;
+        padding: 5px;
+        color: white;
+    }
+    
+}
+
+.list-style:hover {
+    transform: scale(1.03);
+    background-color: #4F275F;
+    color: white;
+}
+
+.icon-awesome {
+    margin-right: 2rem;
+    font-size: 20px;
+    color: blue;
+    .faicons {
+        margin-left: 50px;
+        color: white;
+    }
+    .edit {
+        color:green;
+    }
+    .del {
+        color: red;
+    }
+
+
+}
+
+.btn-animation {
+    color:white;
+}
+
+.active-animation {
+    color:yellow;
+}
+
+.buttonTrue {
+    color: rgb(251, 255, 6);
+}
+
+.buttonFalse {
+    color: white;
+}

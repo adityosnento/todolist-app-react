@@ -1,0 +1,44 @@
+.Container {
+    display: flex;
+    background-color: #3c1e4d;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Container {
+    .todo-container
+    .navbar-container {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    }
+    
+}
+
+.todo-container {
+    p {
+        margin-left: 100px;
+        align-items: center;
+    }
+}
+
+.navbar-container {
+
+    display: flex;
+    margin-right: 80px;
+}
+
+.navbar-container {
+    a {
+        margin-left: 10px ;
+        list-style: none;
+        padding: 30px;
+        border-radius: 15px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+     }
+}
+
