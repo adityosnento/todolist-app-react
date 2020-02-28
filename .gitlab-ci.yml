@@ -16,12 +16,12 @@ deploy-to-staging:
   stage: staging
   environment:
     name: staging
-    url: https://$HEROKU_STAGING_APP.$DOMAIN_APP
+    url: https://$STAGING_APP.herokuapp.com
   script:
     - apt-get update -qy
     - apt-get install -y ruby ruby-dev rubygems-integration
     - gem install dpl
-    - dpl --provider=heroku --app=$HEROKU_STAGING_APP --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=$STAGING_APP --api-key=$HEROKU_API_KEY
   only:
     - develop
 deploy-production:
@@ -29,11 +29,11 @@ deploy-production:
   stage: production
   environment:
     name: production
-    url: https://$HEROKU_PRODUCTION_APP.$DOMAIN_APP
+    url: https://$PRODUCTION_APP.herokuapp.com
   script:
     - apt-get update -qy
     - apt-get install -y ruby ruby-dev rubygems-integration
     - gem install dpl
-    - dpl --provider=heroku --app=$HEROKU_PRODUCTION_APP --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=$PRODUCTION_APP --api-key=$HEROKU_API_KEY
   only:
     - master
