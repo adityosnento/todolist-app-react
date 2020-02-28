@@ -4,7 +4,6 @@ import InputForm from "./InputForm";
 import "../../../assets/style/MainTodoList.scss";
 import axios from "axios";
 
-// import Pagination from "./Pagination";
 
 class MainTodoList extends React.Component {
   state = {
@@ -162,30 +161,30 @@ class MainTodoList extends React.Component {
     })
   }
 
-  uploadSubmit = async () => {
-    const upload = new FormData()
+  // uploadSubmit = async () => {
+  //   const upload = new FormData()
 
-    upload.append = ('image', this.state.selectedFile, this.state.selectedFile.name)
+  //   upload.append = ('image', this.state.selectedFile, this.state.selectedFile.name)
     
-    try {
-      await axios.put(
-        `https://ga-todolist.herokuapp.com/api/user/profile/`,
-        upload,
-        this.state.token
-      );
-      await(res =>{
-        console.log(res.data)
-        this.setState({
+  //   try {
+  //     await axios.put(
+  //       `https://ga-todolist.herokuapp.com/api/user/profile/`,
+  //       upload,
+  //       this.state.token
+  //     );
+  //     await(res =>{
+  //       console.log(res.data)
+  //       this.setState({
           
           
-        })
-        localStorage.setItem('userData',JSON.stringify(data.data.token));
-        alert('data upload succes')
-      })
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //       })
+  //       localStorage.setItem('userData',JSON.stringify(data.data.token));
+  //       alert('data upload succes')
+  //     })
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   render() {
     return (
@@ -194,8 +193,8 @@ class MainTodoList extends React.Component {
                 <div className="profile-content">
                     <img src={require('../../../assets/picture/profile.jpg')} alt="user"/>
                     <p>Adityo S. Nento</p>
-                    <input type="file" onChange={this.uploadHandler}/>
-                    <button onClick={this.uploadSubmit}>Upload File</button>
+                    {/* <input type="file" onChange={this.uploadHandler}/>
+                    <button onClick={this.uploadSubmit}>Upload File</button> */}
                 </div>
                 <div className="task-content">
                     <ul>
