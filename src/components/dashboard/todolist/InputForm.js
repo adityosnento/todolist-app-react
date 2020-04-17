@@ -15,6 +15,7 @@ class InputForm extends React.Component {
 
     addNewTodo = async(e) => {
         e.preventDefault()
+       
         try {
           let res = await fetch("https://ga-todolist.herokuapp.com/api/task/create", {
             method: "POST",

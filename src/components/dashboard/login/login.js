@@ -54,8 +54,6 @@ class Login extends Component {
       [e.target.id]: e.target.value
     });
 
-    console.log(name);
-    console.log("value: ", value.length);
 
     switch (name) {
       case "email":

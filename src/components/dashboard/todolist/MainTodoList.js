@@ -32,6 +32,7 @@ class MainTodoList extends React.Component {
         }
       });
       let data = await res.json();
+      console.log(data.data)
       if (data.status === true) {
         this.setState({ todos: data.data.docs });
       }
@@ -111,6 +112,8 @@ class MainTodoList extends React.Component {
       importance: this.state.importance
     };
 
+
+    
     try {
       await axios.put(
         `https://ga-todolist.herokuapp.com/api/task/importance/${id}`,
@@ -147,7 +150,6 @@ class MainTodoList extends React.Component {
 
   componentDidMount() {
     this.getAllData();
-    console.log("halo")
   }
 
   tabProgress = (param) => {
@@ -207,6 +209,9 @@ class MainTodoList extends React.Component {
             </div>
 
             <div className="form-container">
+            <p>Note*</p>
+                <p>: Must Login First!</p>
+                <p>: Double Click for change to important!</p>
                 <h1>Welcome to TodoList!</h1>
                 <InputForm addNew={this.toAddNewTodo} getAll={this.getAllData} />
                 <TodoList

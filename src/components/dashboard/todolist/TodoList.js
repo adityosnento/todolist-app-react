@@ -9,6 +9,7 @@ const TodoList = props => {
         <input 
         type="checkbox"
         checked={todo.completed}
+        className="checkbx"
         onChange={() => props.completed(todo._id, todo.completed)}  
         />
         <input 

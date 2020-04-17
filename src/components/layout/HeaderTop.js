@@ -11,7 +11,6 @@ state ={
 
 componentDidMount() {
     if (localStorage.getItem('userData')) {
-        console.log('User Logged in');
     } else {
         this.setState({redirect:true})
     }

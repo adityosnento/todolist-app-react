@@ -31,6 +31,7 @@
         background-color: transparent;
         border: 0;
         padding: 0;
+        padding-bottom: 5px;
         border-color:transparent;
         margin-left: 10px;
     }
@@ -38,6 +39,9 @@
     input {
         border-color: transparent;
         background-color: transparent;
+        padding: 20px;
+        cursor: pointer;
+        
     }
 
     .input-in:hover {
@@ -45,6 +49,11 @@
         padding: 5px;
         color: white;
     }
+
+    .checkbx {
+        zoom: 1.5;
+    }
+    
     
 }
 
@@ -56,17 +65,25 @@
 
 .icon-awesome {
     margin-right: 2rem;
-    font-size: 20px;
+    font-size: 16px;
     color: blue;
     .faicons {
         margin-left: 50px;
         color: white;
     }
     .edit {
-        color:green;
+        background-color:#367c69;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 20px;
+        cursor: pointer;
     }
     .del {
-        color: red;
+        background-color:#367c69;
+        color: white;
+        padding: 8px 25px;
+        border-radius: 20px;
+        cursor: pointer;
     }
 
 
@@ -82,8 +99,16 @@
 
 .buttonTrue {
     color: rgb(251, 255, 6);
+    background-color:#367c69;
+    padding: 8px 25px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .buttonFalse {
     color: white;
+    background-color:green;
+    padding: 8px 25px;
+    border-radius: 20px;
+    cursor: pointer;
 }
